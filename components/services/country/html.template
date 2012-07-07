@@ -89,7 +89,7 @@
           {%endif%}
       </div>
       <div class="span4">
-      {{models.dbpedia.map|GoogleMaps:"la,lo,la,,,10"}}
+      {{models.dbpedia.map|GoogleMaps:"la,lo,la,,,1"}}
       </div>
       <div class="span6" style="text-align:justify">
       {{first.dbpedia.map.ab.value}}
