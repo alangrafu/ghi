@@ -1,0 +1,8 @@
+PREFIX local_structure: <http://data.kasabi.com/dataset/global-hunger-index/structure/>
+
+SELECT DISTINCT ?resource ?label WHERE {
+    ?resource rdfs:label ?label .
+    [] local_structure:refArea ?resource .
+  FILTER(regex(str(?label), "{{lodspk.args.arg0}}", "i"))
+}
+LIMIT 10

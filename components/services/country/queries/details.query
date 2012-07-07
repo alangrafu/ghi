@@ -1,0 +1,3 @@
+SELECT ?label WHERE{
+  <http://sws.geonames.org/{{lodspk.args.arg0}}/> rdfs:label ?label
+}LIMIT 1
